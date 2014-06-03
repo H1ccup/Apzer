@@ -1,0 +1,13 @@
+* This will be an api testing framework borrowing ideas from Mock, Nose and Apiary. 
+
+* There are two ways in which you can provide your api to Apzer - 
+	* You can either define a route schema, thas has your api endpoint, params required 
+	and json/xml response
+
+	* Or you can use the apz.route() on your views/controllers and register them as apis. 
+
+* In both of the cases, you've to provide a json schema response if you want it to over-ride the response of your function
+
+* This has been built so that it remains framework indepedent. Though it will be built around cherrypy, where it can act as a standalone server which uses your controllers as functions that return data after hitting a particular end-point. Or you can always pass your server instance to it and it will pop up on {{route_ur}}/apz when you start your server. 
+
+ 
